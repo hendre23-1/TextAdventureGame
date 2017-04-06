@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ASOIAF</title>
+  <script src="jquery-3.2.0.js">
+  
+  </script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+</head>
+
+<body>
+  <div class="content">
+    <style>
+    </style>
+    <div id="screenContainer">
+      <div id="display">
+        <div id="input">
+          <form>
+            <center>
+            <h1>A Song Of Ice And Fire</h1>
+            <!--Screen Sub-Title-->
+            <h3>Game of Thrones Text Adventure Game!</h3>
+			</center>
+			<hr>
+            <div id="GameOverDiv">
+            </div>
+            <div id="GameDiv">
+              <!--The following div is hidden or shown depending on if its a non-mobile browser-->
+              <div id="Keyboard">
+			  <div class="col-xs-3">
+				<label for="cmd"><h3>Command:</h3></label>
+				<input type="text" class="form-control" name="userInput" id="userInput">
+				</div>
+              </div>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+              <!--The following div is hidden or shown depending on if its a mobile browser-->
+              <div id="controllers">
+                <!--We use a table for the simple alignment of the buttons-->
+                <table>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <input type='button' class='button' value='N' title="North" style="left: 200px" />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type='button' class='button' value='W' title="West" />
+                    </td>
+                    <td></td>
+                    <td>
+                      <input type='button' class='button' value='E' title="East" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <input type='button' class='button' value='S' title="South" />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type='button' class='button' value='P' title="Pickup" />
+                    </td>
+                    <td>
+                      <input type='button' class='button' value='A' title="About" />
+                    </td>
+                    <td>
+                      <input type='button' class='button' value='H' title="Help" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="output"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
